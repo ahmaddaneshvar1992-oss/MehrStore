@@ -14,7 +14,7 @@ if not exist "MehrStore-Setup.exe.part5" goto missing
 copy /b "MehrStore-Setup.exe.part1"+"MehrStore-Setup.exe.part2"+"MehrStore-Setup.exe.part3"+"MehrStore-Setup.exe.part4"+"MehrStore-Setup.exe.part5" "MehrStore-Setup.exe" >nul
 if errorlevel 1 goto error
 for %%F in ("MehrStore-Setup.exe") do set SIZE=%%~zF
-if not "%SIZE%"=="40212535" goto badsize
+if not "%SIZE%"=="40224378" goto badsize
 echo.
 echo  [تایید] فایل نصبی با موفقیت ساخته شد: MehrStore-Setup.exe
 echo.
